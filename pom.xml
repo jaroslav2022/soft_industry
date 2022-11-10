@@ -15,6 +15,8 @@
         <serenity.maven.version>2.6.0</serenity.maven.version>
         <serenity.cucumber.version>2.6.0</serenity.cucumber.version>
         <encoding>UTF-8</encoding>
+        <tags></tags>
+        <webdriver.base.url></webdriver.base.url>
     </properties>
     <dependencies>
         <dependency>
