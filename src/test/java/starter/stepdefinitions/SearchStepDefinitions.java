@@ -6,8 +6,7 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.*;
 
 public class SearchStepDefinitions {
 
@@ -28,6 +27,17 @@ public class SearchStepDefinitions {
     public void heSeesTheResultsDisplayedForMango() {
         restAssuredThat(response ->
                 response.body("title", hasItem("AH Mango")));
+    }
+    @Then("he sees the total number of results for mango")
+    public void heSeesMangoTotal() {
+        restAssuredThat(response ->
+                response.body("title", iterableWithSize(46)));
+    }
+
+    @Then("he sees the total number of results for coop mango")
+    public void heSeesCoopMangoTotal() {
+        restAssuredThat(response ->
+                response.body("provider.findAll{it=='Coop'}", iterableWithSize(20)));
     }
 
     @Then("he does not see the results")
