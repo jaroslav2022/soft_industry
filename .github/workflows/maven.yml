@@ -26,6 +26,6 @@ jobs:
       uses: dorny/test-reporter@v1
       with:
         name: 'Test report $1'
-        path: 'site/serenity/*.html'
+        path: '/site/serenity/*.json'
         reporter: 'java-junit'
 
