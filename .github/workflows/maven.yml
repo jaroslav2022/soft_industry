@@ -27,5 +27,5 @@ jobs:
       with:
         name: 'Test report $1'
         path: '**/site/serenity/*.json'
-        reporter: 'java-junit'
+        reporter: 'mocha-json'
 
