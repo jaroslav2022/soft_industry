@@ -25,7 +25,7 @@ jobs:
     - name: Report
       uses: dorny/test-reporter@v1
       with:
-        artifact: /test-results-(.*)/
+        artifact: /serenity-maven-plugin/
         name: 'Test report $1'
         path: '*.html'
         reporter: 'java-junit'
