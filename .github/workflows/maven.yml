@@ -26,4 +26,5 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
     steps:
-      - run: mvn clean verify
+      - uses: actions/checkout@v2         # checkout the repo
+      - run: mvn clean verify 
