@@ -27,5 +27,5 @@ jobs:
       with:
         name: 'Test report $1'
         path: '**/site/serenity/*.json'
-        reporter: 'mocha-json'
+        reporter: 'dart-json'
 
