@@ -27,4 +27,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2         # checkout the repo
-        - uses: dorny/test-reporter@v1.6.0
+      - uses: dorny/test-reporter@v1.6.0
