@@ -23,10 +23,3 @@ jobs:
     - name: Build with Maven
       run: mvn -B verify --file pom.xml
 
-  build-test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2         # checkout the repo
-      - run: mvn -B verify --file pom.xml
-      - name: Test Report
-      - uses: dorny/test-reporter@v1.6.0
