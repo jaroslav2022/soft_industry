@@ -26,6 +26,6 @@ jobs:
       uses: dorny/test-reporter@v1
       with:
         name: 'Test report'
-        path: '**/site/serenity/*.html'
-        reporter: 'jest-junit'
+        path: '**/site/serenity/*.json'
+        reporter: 'dart-json'
 
