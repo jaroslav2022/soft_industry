@@ -1,14 +1,14 @@
 ## How to install
 
 Clone git repository<br/>
-URL: https://github.com/JaroslavsKudrjasovs/Soft-industry-example <br/>
+URL: https://github.com/jaroslav2022/soft_industry <br/>
 Then in Intellij Idea create new project `using existing sources`<br/>
 And choose cloned directory
 
 or
 
 File->New->Project from version control<br/>
-URL: https://github.com/JaroslavsKudrjasovs/Soft-industry-example <br/>
+URL: https://github.com/jaroslav2022/soft_industry <br/>
 click `Clone` and wait until maven resolves dependencies
 
 ## How to run
